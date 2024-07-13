@@ -1,0 +1,249 @@
+/* Xóa hết tất cả khoảng cách mặc định ở lề */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #fff;
+}
+
+
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .feedback__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title__icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .title__content {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .feedback__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .content__1, .content__2, .content__3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    width: calc(33.333% - 20px);
+    margin: 10px;
+  }
+  
+  .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .comment {
+    text-align: center;
+  }
+  
+  .comment__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .comment__content {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .comment__icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .comment__icon .icon__1, .icon__2, .icon__3, .icon__4, .icon__5 {
+    color: #ffd700;
+    margin: 0 2px;
+  }
+  
+/* end feedback  */
+
+
+/* Registry Advisory  */
+/* Registry */
+
+.registry {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 20px 0 20px;  
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    /* overflow: hidden; */
+}
+
+/* picture  */
+.registry .registry__picture {
+    width: 40%;
+    height: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.registry .registry__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* form  */
+.registry .registry__form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* title form  */
+.registry .registry__form .title {
+    font-size: 36px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* input */
+.registry .registry__form .input {
+    padding: 20px;
+    border: none;
+    font: inherit;
+    color: #000;
+    background-color: transparent;
+}
+
+.registry__form .input-name,
+.registry__form .input-phone,
+.registry__form .input-email {
+    position: relative;
+    outline: 0.5px solid #000;
+    border-radius: 10px;
+}
+
+.registry__form .input-name,
+.registry__form .input-phone {
+    margin-bottom: 30px;
+}
+
+.registry__form .input-email {
+    margin-bottom: 10px;
+}
+
+
+/* input field */
+.registry__form .input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 100px;
+    outline: none;
+}
+
+/* label  */
+.registry__form .input-label {
+    position: absolute;
+    /* top: -18px;
+    left: 10px; */
+    background-color: #f7f7f7;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    /* transition: 0.3s; */
+}
+
+/* label animation  */
+.input:focus+ .input-label,
+.input:valid+ .input-label {
+    transform: 
+    translate(10px, -18px) scale(.9);
+    color: #000;
+    padding-inline: 5px;
+    
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .30s;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #f7f7f7;
+}
+
+/* button  */
+.registry__form button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    padding: 20px;  
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* button animation  */
+.registry__form button:hover {
+    background-color: #463c3c;
+}
+
+/* end registry advisory  */

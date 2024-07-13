@@ -1,0 +1,109 @@
+/* Xóa hết tất cả khoảng cách mặc định ở lề */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+  
+ /* feedback section */
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  .feedback__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+  
+  .title__icon {
+    font-size: 24px;
+    color: red;
+  }
+  
+  .title__content {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* content section */
+  .feedback__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: flex-start;
+  }
+  
+  .content__1, .content__2, .content__3 {
+    display: flex;
+    flex-direction: row;
+   
+    
+  }
+  
+  
+
+  .feedback__content .picture img {
+  
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; 
+    
+  }
+  
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    background: #f0f0f0; 
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    z-index: 0; 
+  }
+  
+  .comment__name {
+    align-self: flex-end;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .comment__content {
+    max-width: 200px; /* Điều chỉnh kích thước tối đa của nội dung */
+    word-wrap: break-word; /* Đảm bảo rằng nội dung sẽ xuống dòng khi cần thiết */
+    overflow-wrap: break-word; /* Tương tự như word-wrap, đảm bảo nội dung không tràn ra ngoài */
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify; /* Đảm bảo văn bản căn đều chữ trong khung */
+  }
+  
+  
+  .comment__icon {
+    display: flex;
+    color: #D6A72F;
+    gap: 5px;
+  }
+  
+
+
